@@ -1,0 +1,34 @@
+#wlkatalogferdigshortcode {
+	border-radius: 15px;
+	background-color: #dfd;
+	width: 95%;
+	padding: 10px;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	font-weight: lighter;
+}
+
+table.wlkatalogsettingstabell {
+	padding: 5px;
+  vertical-align: top;
+}
+
+table.wlkatalogsettingstabell td{
+  vertical-align: top;
+}
+
+
+.wl-option-info{
+  padding:5px 5px;
+  margin-bottom: 20px;
+  color: #31708f;
+  background-color: #d9edf7;
+
+    background-image: -webkit-linear-gradient(top,#d9edf7 0,#b9def0 100%);
+  background-image: -o-linear-gradient(top,#d9edf7 0,#b9def0 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#d9edf7),to(#b9def0));
+  background-image: linear-gradient(to bottom,#d9edf7 0,#b9def0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #9acfea;
+}

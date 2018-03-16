@@ -1,0 +1,604 @@
+# Copyright (C) 2016 WL Katalogs&oslash;k
+# This file is distributed under the same license as the WL Katalogs&oslash;k package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WL Katalogs&oslash;k 3.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wl-katalogsok\n"
+"POT-Creation-Date: 2016-06-03 15:30:47+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin.php:21
+msgid "Tittel:"
+msgstr ""
+
+#: admin.php:27
+msgid "Hvilken bibliotekkatalog vil du s&oslash;ke i?"
+msgstr ""
+
+#: admin.php:43
+msgid "Hvilken side vil du vise trefflisten p&aring;?"
+msgstr ""
+
+#: admin.php:56
+msgid "Du m&aring; sette inn kortkoden [wl-ils] i et innlegg eller p&aring; en side f&oslash;rst!"
+msgstr ""
+
+#: functions.php:96 functions.php:109 functions.php:115 functions.php:116
+#: functions.php:133
+msgid "Ukjent status"
+msgstr ""
+
+#: functions.php:97
+msgid "I bestilling"
+msgstr ""
+
+#: functions.php:98
+msgid "Ukjent status, utilgjengelig"
+msgstr ""
+
+#: functions.php:99 functions.php:100
+msgid "Utl&aring;nt"
+msgstr ""
+
+#: functions.php:101
+msgid "Under behandling"
+msgstr ""
+
+#: functions.php:102
+msgid "Innkalt"
+msgstr ""
+
+#: functions.php:103
+msgid "P&aring; vent"
+msgstr ""
+
+#: functions.php:104
+msgid "Venter p&aring; klargj&oslash;ring"
+msgstr ""
+
+#: functions.php:105
+msgid "P&aring; vei mellom to bibliotek"
+msgstr ""
+
+#: functions.php:106
+msgid "Hevdet innlevert eller aldri l&aring;nt"
+msgstr ""
+
+#: functions.php:107
+msgid "Tapt"
+msgstr ""
+
+#: functions.php:108
+msgid "Savnet - vi leter"
+msgstr ""
+
+#: functions.php:110
+msgid "Til innbinding"
+msgstr ""
+
+#: functions.php:111
+msgid "Til reparasjon"
+msgstr ""
+
+#: functions.php:112
+msgid "Venter p&aring; overf&oslash;ring"
+msgstr ""
+
+#: functions.php:113
+msgid "Purring sendt"
+msgstr ""
+
+#: functions.php:114
+msgid "Trukket tilbake"
+msgstr ""
+
+#: functions.php:117
+msgid "Skadet"
+msgstr ""
+
+#: functions.php:118
+msgid "Ikke i oml&oslash;p"
+msgstr ""
+
+#: functions.php:119
+msgid "Annen status"
+msgstr ""
+
+#: functions.php:122
+msgid "[Ikke til utl&aring;n]"
+msgstr ""
+
+#: functions.php:123
+msgid "Ledig [Til bruk i biblioteket]"
+msgstr ""
+
+#: functions.php:124
+msgid "Ledig [Dagsl&aring;n]"
+msgstr ""
+
+#: functions.php:125
+msgid "Ledig [Til bruk p&aring; lesesal el.l.]"
+msgstr ""
+
+#: functions.php:126
+msgid "Ledig [Kan ikke fornyes]"
+msgstr ""
+
+#: functions.php:127
+msgid "Ledig [Begrenset l&aring;netid]"
+msgstr ""
+
+#: functions.php:128
+msgid "Ledig [Utvidet l&aring;netid]"
+msgstr ""
+
+#: functions.php:129 functions.php:130 functions.php:131 search.php:439
+#: templates/results.php:207 templates/single-result.php:68
+msgid "Ledig"
+msgstr ""
+
+#: functions.php:291
+msgid "Utgitt : "
+msgstr ""
+
+#: search.php:373
+msgid "ISBN: "
+msgstr ""
+
+#: search.php:377
+msgid "Omfang: "
+msgstr ""
+
+#: search.php:381
+msgid "Originaltittel: "
+msgstr ""
+
+#: search.php:445
+msgid "Utl&aring;nt el.l."
+msgstr ""
+
+#: search.php:451 templates/results.php:213
+msgid "Ikke ledig"
+msgstr ""
+
+#: search.php:457
+msgid "Uklar bestand!"
+msgstr ""
+
+#: search.php:470 templates/results.php:143 templates/single-result.php:104
+#: templates/tabs/enkeltbaser/ebokbib.php:17
+msgid "Les utdrag"
+msgstr ""
+
+#: templates/results-pager.php:7
+msgid " i Bokhylla "
+msgstr ""
+
+#: templates/results-pager.php:32 templates/results-pager.php:35
+msgid "Forrige"
+msgstr ""
+
+#: templates/results-pager.php:40
+msgid "Viser treff %1$s av %2$s ved s&oslash;k %3$s etter %4$s."
+msgstr ""
+
+#: templates/results-pager.php:47
+msgid "Viser treff 1-%1$s ved s&oslash;k %2$s etter %3$s."
+msgstr ""
+
+#: templates/results.php:11
+msgid "Treffliste"
+msgstr ""
+
+#: templates/results.php:60
+msgid ""
+"FEIL: G&aring; til innstillinger for WL Katalogs&oslash;k og velg noen kilder &aring; s&oslash;ke i!"
+msgstr ""
+
+#: templates/results.php:70 templates/settings.php:33
+msgid "Biblioteket"
+msgstr ""
+
+#: templates/results.php:74 templates/settings.php:35
+msgid "Frie e-b&oslash;ker"
+msgstr ""
+
+#: templates/results.php:74 templates/results.php:78 templates/results.php:82
+#: templates/search-form.php:58
+msgid "Laster..."
+msgstr ""
+
+#: templates/results.php:78 templates/settings.php:37
+msgid "Bokhylla.no"
+msgstr ""
+
+#: templates/results.php:82 templates/settings.php:39
+msgid "Filmbib.no"
+msgstr ""
+
+#: templates/results.php:121
+msgid "G&aring; til avansert s&oslash;k"
+msgstr ""
+
+#: templates/results.php:143 templates/tabs/enkeltbaser/ebokbib.php:17
+msgid "Utdrag"
+msgstr ""
+
+#: templates/results.php:144 templates/tabs/enkeltbaser/ebokbib.php:18
+msgid "L&aring;n e-bok"
+msgstr ""
+
+#: templates/results.php:162 templates/results.php:163
+msgid "Last ned som PDF!"
+msgstr ""
+
+#: templates/results.php:187 templates/tabs/enkeltbaser/bokhyllaalt.php:29
+#: templates/tabs/enkeltbaser/ebokbib.php:193
+#: templates/tabs/enkeltbaser/filmbib.php:32
+#: templates/tabs/enkeltbaser/openlibrary.php:66
+msgid "Kilde:"
+msgstr ""
+
+#: templates/results.php:187
+msgid "Katalog"
+msgstr ""
+
+#: templates/results.php:209
+msgid "Utl&aring;nt e.l."
+msgstr ""
+
+#: templates/results.php:211
+msgid "Online i Bokhylla"
+msgstr ""
+
+#: templates/results.php:215 templates/single-result.php:70
+msgid "Uklar bestand"
+msgstr ""
+
+#: templates/results.php:223 templates/tabs/enkeltbaser/bokhyllaalt.php:32
+msgid "Les p&aring; nett!"
+msgstr ""
+
+#: templates/results.php:235 templates/tabs/enkeltbaser/bokhyllaalt.php:165
+#: templates/tabs/enkeltbaser/ebokbib.php:285
+#: templates/tabs/enkeltbaser/filmbib.php:98
+msgid "Beklager, ingen treff!"
+msgstr ""
+
+#: templates/results.php:276 templates/results.php:283
+msgid "Henter treff... hold ut!"
+msgstr ""
+
+#: templates/search-form.php:24
+msgid "S&oslash;keord:"
+msgstr ""
+
+#: templates/search-form.php:25
+msgid "S&oslash;k"
+msgstr ""
+
+#: templates/settings.php:17
+msgid "WL Katalogs&oslash;k - innstillinger"
+msgstr ""
+
+#: templates/settings.php:24
+msgid "Kilder"
+msgstr ""
+
+#: templates/settings.php:26
+msgid ""
+"Hvilke fanekort vil du vise i s&oslash;ket? Hold nede Ctrl og klikk for &aring; velge "
+"flere: "
+msgstr ""
+
+#: templates/settings.php:44
+msgid "Visning"
+msgstr ""
+
+#: templates/settings.php:46
+msgid "Side for visning av enkeltposter:"
+msgstr ""
+
+#: templates/settings.php:49
+msgid "Ingen - g&aring; til biblioteksystemet"
+msgstr ""
+
+#: templates/settings.php:82
+msgid "Vise lenke til avansert s&oslash;k?"
+msgstr ""
+
+#: templates/settings.php:87
+msgid "&Aring;pne enkeltposter i nytt vindu?"
+msgstr ""
+
+#: templates/settings.php:92
+msgid "Omslagsbilder"
+msgstr ""
+
+#: templates/settings.php:95
+msgid "Pr&oslash;ve &aring; finne omslag hos Bokkilden?"
+msgstr ""
+
+#: templates/settings.php:100
+msgid "Pr&oslash;ve &aring; finne omslag hos Nasjonalbiblioteket?"
+msgstr ""
+
+#: templates/settings.php:105
+msgid "Selve s&oslash;ket"
+msgstr ""
+
+#: templates/settings.php:116
+msgid "Automatisk h&oslash;yretrunkering? (Kan gi mye st&oslash;y!)"
+msgstr ""
+
+#: templates/settings.php:123
+msgid "Oppdat&eacute;r"
+msgstr ""
+
+#: templates/shortcode-generator.php:6
+msgid "WL Katalogs&oslash;k - lag din egen shortcode"
+msgstr ""
+
+#: templates/shortcode-generator.php:8
+msgid ""
+"P&aring; denne siden kan du gj&oslash;re alle valgene for hvordan s&oslash;ket skal se ut p&aring; "
+"siden din. N&aring; du lagrer disse valgene ved &aring; klikke p&aring; knappen nederst p&aring; "
+"siden, blir feltet med kortkoden (shortcode) oppdatert. Denne kan du s&aring; "
+"kopiere og lime inn i et innlegg eller p&aring; en side."
+msgstr ""
+
+#: templates/shortcode-generator.php:14
+msgid "Angi katalog det skal s&oslash;kes i:"
+msgstr ""
+
+#: templates/shortcode-generator.php:16
+msgid "(Du m&aring; velge et bibliotek!)"
+msgstr ""
+
+#: templates/shortcode-generator.php:29
+msgid "Antall treff som skal vises per side:"
+msgstr ""
+
+#: templates/shortcode-generator.php:37
+msgid "Vise omslagsbilder?"
+msgstr ""
+
+#: templates/shortcode-generator.php:43
+msgid "Shortcode til &aring; kopiere og lime inn i innlegg eller p&aring; sider"
+msgstr ""
+
+#: templates/shortcode-generator.php:45
+msgid "(Shortcode dukker opp her n&aring;r du foretar et valg)"
+msgstr ""
+
+#: templates/single-result.php:61
+msgid "Del p&aring; Twitter"
+msgstr ""
+
+#: templates/single-result.php:61
+msgid "Del p&aring; Facebook"
+msgstr ""
+
+#: templates/single-result.php:61
+msgid "Facebook-deling"
+msgstr ""
+
+#: templates/single-result.php:68
+msgid "Ledig!"
+msgstr ""
+
+#: templates/single-result.php:70
+msgid "Uklar bestand - kontakt biblioteket!"
+msgstr ""
+
+#: templates/single-result.php:72
+msgid "Ingen ledige!"
+msgstr ""
+
+#: templates/single-result.php:72
+msgid "Ingen ledige..."
+msgstr ""
+
+#: templates/single-result.php:84
+msgid "Forfatter"
+msgstr ""
+
+#: templates/single-result.php:88
+msgid "Opphav"
+msgstr ""
+
+#: templates/single-result.php:92 templates/tabs/enkeltbaser/bokselskap.php:56
+msgid "Utgitt"
+msgstr ""
+
+#: templates/single-result.php:96
+msgid "Omfang"
+msgstr ""
+
+#: templates/single-result.php:100
+#: templates/tabs/enkeltbaser/bokselskap.php:58
+msgid "ISBN"
+msgstr ""
+
+#: templates/single-result.php:117
+msgid "Les p&aring; nett"
+msgstr ""
+
+#: templates/single-result.php:120
+msgid "Bestille/reservere"
+msgstr ""
+
+#: templates/single-result.php:134 templates/single-result.php:161
+msgid "Eksemplarer"
+msgstr ""
+
+#: templates/single-result.php:146
+msgid " til "
+msgstr ""
+
+#: templates/single-result.php:162
+msgid "Beskrivelse"
+msgstr ""
+
+#: templates/single-result.php:163
+msgid "Flere opplysninger"
+msgstr ""
+
+#: templates/single-result.php:209
+msgid ""
+"Dette er en ebok som du m&aring; ha appen eBokBib for &aring; lese p&aring; nettbrett eller "
+"smarttelefon. Appen f&aring;r du i App Store (iOS) eller Google Play (Android). "
+"Klikk p&aring; logoen for &aring; l&aring;ne boka eller f&aring; mer informasjon."
+msgstr ""
+
+#: templates/single-result.php:227
+#: templates/tabs/enkeltbaser/bokhyllaalt.php:93
+#: templates/tabs/enkeltbaser/ebokbib.php:198
+msgid "Omfang:"
+msgstr ""
+
+#: templates/single-result.php:238
+msgid "Originaltittel:"
+msgstr ""
+
+#: templates/single-result.php:241
+msgid "Dewey:"
+msgstr ""
+
+#: templates/single-result.php:246
+msgid "Generell note:"
+msgstr ""
+
+#: templates/single-result.php:249
+msgid "Innholdsnote:"
+msgstr ""
+
+#: templates/single-result.php:252
+msgid "Medvirkende:"
+msgstr ""
+
+#: templates/single-result.php:257
+msgid "Tittelinformasjon:"
+msgstr ""
+
+#: templates/single-result.php:260
+#: templates/tabs/enkeltbaser/kirjastokaista.php:69
+msgid "Emneord:"
+msgstr ""
+
+#: templates/tabs/enkeltbaser/bokhyllaalt.php:92
+#: templates/tabs/enkeltbaser/ebokbib.php:195
+msgid "Utgitt:"
+msgstr ""
+
+#: templates/tabs/enkeltbaser/bokhyllaalt.php:122
+msgid "Last ned som PDF"
+msgstr ""
+
+#: templates/tabs/enkeltbaser/bokhyllaalt.php:162
+msgid "Funnet %d treff."
+msgstr ""
+
+#: templates/tabs/enkeltbaser/bokhyllaalt.php:162
+msgid "Se alle treffene p&aring; nb.no"
+msgstr ""
+
+#: templates/tabs/enkeltbaser/bokselskap.php:13
+#: templates/tabs/enkeltbaser/openlibrary.php:13
+msgid "Last ned!"
+msgstr ""
+
+#: templates/tabs/enkeltbaser/bokselskap.php:57
+msgid "Kilde"
+msgstr ""
+
+#: templates/tabs/enkeltbaser/kirjastokaista.php:49
+#: templates/tabs/enkeltbaser/kirjastokaista.php:51
+msgid "Av:"
+msgstr ""
+
+#: templates/tabs/enkeltbaser/kirjastokaista.php:54
+msgid "Lengde:"
+msgstr ""
+
+#: templates/tabs/enkeltbaser/kirjastokaista.php:94
+msgid "Flere treff fra Kirjastokaista?"
+msgstr ""
+
+#: templates/tabs/enkeltbaser/kirjastokaista.php:97
+msgid "Ingen treff i Kirjastokaista..."
+msgstr ""
+
+#: templates/tabs/enkeltbaser/nbepub.php:70
+msgid "(Uten tittel)"
+msgstr ""
+
+#: templates/tabs/enkeltbaser/nbepub.php:80
+msgid "Nasjonalbiblioteket - EPUB"
+msgstr ""
+
+#: templates/tabs/enkeltbaser/nbepub.php:105
+msgid "Ingen treff fra EPUB hos Nasjonalbiblioteket..."
+msgstr ""
+
+#: templates/tabs/enkeltbaser/openlibrary.php:65
+msgid "Forfatter:"
+msgstr ""
+
+#: widget.php:22
+msgid "S&oslash;keord..."
+msgstr ""
+
+#: widget.php:39
+msgid "S&oslash;k"
+msgstr ""
+
+#: wl-katalogsok.php:64
+msgid ""
+"<b><i>Melding fra Wordpress-utvidelsen WL Katalogs&oslash;k:</i></b><br />Shortcode "
+"m&aring; inneholde en bibliotekkatalog du vil s&oslash;ke i.<br />"
+msgstr ""
+
+#: wl-katalogsok.php:64
+msgid "G&aring; til Verkt&oslash;y->WL Katalogs&oslash;k i Wordpress for &aring; lage en shortcode."
+msgstr ""
+
+#. #-#-#-#-#  wl-katalogsok.pot (WL Katalogs&oslash;k 3.1)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: wl-katalogsok.php:133
+msgid "WL Katalogs&oslash;k"
+msgstr ""
+
+#: wl-katalogsok.php:136
+msgid "Setter inn s&oslash;kefelt for &aring; s&oslash;ke i b&oslash;ker, e-b&oslash;ker, film, TV og radio."
+msgstr ""
+
+#: wl-katalogsok.php:365
+msgid "Ingen post angitt!"
+msgstr ""
+
+#: wl-katalogsok.php:383 wl-katalogsok.php:394
+msgid "Du har ikke tilgang til denne siden"
+msgstr ""
+
+#. #-#-#-#-#  wl-katalogsok.pot (WL Katalogs&oslash;k 3.1)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  wl-katalogsok.pot (WL Katalogs&oslash;k 3.1)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://www.bibvenn.no/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Interlibrary search for your Wordpress site! NORWEGIAN: Setter inn s&oslash;"
+"kefelt som lar deg s&oslash;ke i mange forskjellige bibliotekssystemer."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "H&aring;kon Sundaune / Bibliotekarens beste venn"
+msgstr ""
