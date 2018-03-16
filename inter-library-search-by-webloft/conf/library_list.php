@@ -1300,6 +1300,13 @@ $libraries = array(
       'system' => 'bibliofil',
       'department_id' => 000000
     ),
+ '2021400' =>
+    array (
+      'name'=> '&Aring;s bibliotek',
+      'server'=> 'https://sru.mikromarc.no/mmwebapi/as-fb/29490/SRU',
+      'system'=>'mikromarc',
+      'department_id' => 29490
+    ),
 
 
      '2042500' =>
