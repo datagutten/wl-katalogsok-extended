@@ -29,7 +29,7 @@ else{
     $ledige = $treff['available_items'];
   }
 
-  elseif ( $system == 'bibliofil' or $system == 'tidemann' ){
+  elseif ( $system == 'bibliofil' or $system == 'tidemann' or $system == 'mikromarc'){
     if ( $items && is_array($items) ) {
       foreach ($items as $index => $bestand) {
         if ( _is($bestand, 'h') == "0" || $index == 'h' && $bestand == '0' ){
