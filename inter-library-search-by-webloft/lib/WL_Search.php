@@ -311,7 +311,7 @@ class WL_Search{
       // }
       elseif (strtolower($library_type) == "mikromarc") {
         $url =
-          WL_Search::buildQuery(
+          WL_CommonSearch::buildQuery(
             $library['server'],
             array(
               'version'         => '1.2',
