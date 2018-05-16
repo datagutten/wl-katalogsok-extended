@@ -244,21 +244,21 @@ class LibrarySearchController extends WL_CommonSearchController{
             }
             elseif ( $available == 0 && ( ($limited + $utlant) > 0)) {
               $data['status'] = 'utlant';
-              $bestandhtml .= "<div class=\"tilgang_boks\">";
+              $bestandhtml .= "<div class=\"tilgang_boks wl-catalog\">";
               $bestandhtml .= __('Utl&aring;nt el.l.', 'inter-library-search-by-webloft') . "&nbsp;:&nbsp;" . ($limited + $utlant) . "<br>\n";
               $bestandhtml .= "<div class=\"orange dot\"></div>";
               $bestandhtml .= "</div>\n";
             }
             elseif ($unavailable > 0) { // unavailable
               $data['status'] = 'ikke-ledig';
-              $bestandhtml .= "<div class=\"tilgang_boks\">";
+              $bestandhtml .= "<div class=\"tilgang_boks wl-catalog\">";
               $bestandhtml .= __('Ikke ledig', 'inter-library-search-by-webloft') . "&nbsp;:&nbsp;" . $unavailable . "<br>\n";
               $bestandhtml .= "<div class=\"red dot\"></div>";
               $bestandhtml .= "</div>\n";
             }
             else {
               $data['status'] = 'uklar';
-              $bestandhtml .= "<div class=\"tilgang_boks\">";
+              $bestandhtml .= "<div class=\"tilgang_boks wl-catalog\">";
               $bestandhtml .= __('Uklar bestand!', 'inter-library-search-by-webloft') . "<br>\n";
               $bestandhtml .= "<div class=\"orange dot\"></div>";
               $bestandhtml .= "</div>\n";
