@@ -36,7 +36,6 @@
     <?php endif; ?>
 
 
-    <?php if ( isset($treff['fulltekst']) or isset($booking_url) && $booking_url ) : ?>
         <div class="buttons">
             <?php if ( isset($treff['fulltekst']) ): /* finnes den p&aring; nett? */ ?>
                 <a class="link-online" href="<?php echo $treff['fulltekst'] ?>"><?php _e('Les p&aring; nett', 'inter-library-search-by-webloft'); ?></a>
@@ -44,8 +43,10 @@
             <?php if ($booking_url): ?>
                 <a class="link-order" href="<?php echo $booking_url ?>"><?php _e('Bestille/reservere', 'inter-library-search-by-webloft'); ?></a>
             <?php endif; ?>
+            <?php if (isset($treff['permalink'])): ?>
+                <a class="link-online" href="<?php echo $treff['permalink'] ?>"><?php _e('Vis i katalogen', 'inter-library-search-by-webloft'); ?></a>
+            <?php endif; ?>
         </div>
-    <?php endif; ?>
     <?php $booking_url = false; $uklar = false; /* m&aring; rydde opp */ ?>
 
     </p>
