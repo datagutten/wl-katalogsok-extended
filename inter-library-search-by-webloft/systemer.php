@@ -171,7 +171,10 @@ function mikromarc_sok($url, $posisjon) {
 
 	$url = $url . "startRecord=" . $posisjon;
 
-	$sru_datafil = wp_remote_retrieve_body(	wp_remote_get( $url ) );
+	$request = wp_remote_get( $url );
+	if(is_wp_error($request))
+		wp_die($request);
+	$sru_datafil = wp_remote_retrieve_body(	$request );
 
 	$result['count-items'] = mikromarc_getCountItems($sru_datafil);
 
