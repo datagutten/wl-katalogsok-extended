@@ -103,6 +103,53 @@ class MBShortcode{
           $treff = WL_Search::getSinglePost( $library, $item_info['postid'] );
           $treff = hente_omslag ($treff); // legger til omslag
           $treff = krydre_some ($treff); // legger til Twitt og face
+			if(!empty($treff['serie']))
+			{
+				foreach ($treff['serie'] as $key=>$object)
+				{
+					$treff['serie'][$key]=WL_Search::getSinglePost( $library, $object);
+					if($treff['serie'][$key]===false) //Post ikke funnet
+					{
+						unset($treff['serie'][$key]);
+						continue;
+					}
+					if(!empty(getSingleItemUrl()))
+					{
+						$item_info['postid']=$object;
+						$enkeltpostinfo = base64_encode(serialize($item_info));
+						$treff['serie'][$key]['permalink']=sprintf('%s?enkeltpostinfo=%s',getSingleItemUrl(),$enkeltpostinfo);
+					}
+					$lastkey=$key;
+				}
+				//Finn årstall for første og siste utvivelse
+				$treff['utgittaar']=sprintf('%s - %s',$treff['serie'][0]['utgittaar'],$treff['serie'][$lastkey]['utgittaar']);
+				$utgitthvem=array_column($treff['serie'],'utgitthvem');
+				$utgitthvem=array_map('trim',$utgitthvem);
+				$utgitthvem=array_unique($utgitthvem);
+				if(empty($treff['utgitthvem']))
+				{
+					if(count($utgitthvem)===1)
+						$treff['utgitthvem']=$utgitthvem[0];
+					else
+						$treff['utgitthvem']=__('Ulike forlag', 'inter-library-search-by-webloft');
+				}
+				$utgitthvor=array_column($treff['serie'],'utgitthvor');
+				$utgitthvor=array_map('trim',$utgitthvor);
+				$utgitthvor=array_unique($utgitthvor);
+				if(empty($treff['utgitthvor']))
+				{
+					if(count($utgitthvor)===1)
+						$treff['utgitthvor']=$utgitthvor[0];
+					else
+						$treff['utgitthvor']=__('Ulike steder', 'inter-library-search-by-webloft');
+				}
+				if(empty($treff['omslag']))
+				{
+					$omslag=hente_omslag($treff['serie'][0]);
+					if(!empty($omslag['omslag']))
+						$treff['omslag']=$omslag['omslag'];
+				}
+			}
         }
       }
 

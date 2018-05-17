@@ -36,6 +36,14 @@
     <?php endif; ?>
 
 
+	<?php if( !empty($treff['serie']) ): ?>
+		<h3>Serie:</h3>
+		<ul>
+		<?Php foreach($treff['serie'] as $item) {
+			printf('<li><a href="%s">%s %s</a></li>'."\n", $item['permalink'], $item['tittel'], $item['subtittel']);
+		} ?>
+	</ul>
+	<?php endif; ?>
         <div class="buttons">
             <?php if ( isset($treff['fulltekst']) ): /* finnes den p&aring; nett? */ ?>
                 <a class="link-online" href="<?php echo $treff['fulltekst'] ?>"><?php _e('Les p&aring; nett', 'inter-library-search-by-webloft'); ?></a>

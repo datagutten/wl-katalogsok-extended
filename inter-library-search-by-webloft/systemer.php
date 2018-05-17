@@ -205,7 +205,7 @@ function mikromarc_sok($url, $posisjon) {
 
 	// Retrieve a set of MARC records from a file
 
-	require 'File/MARCXML.php';
+	require_once 'File/MARCXML.php';
 	$journals = new File_MARCXML($newfile, File_MARC::SOURCE_STRING);
 	// Iterate through the retrieved records
 
@@ -234,9 +234,9 @@ function mikromarc_sok($url, $posisjon) {
 		} else { // no permalink
 			$treff[$hitcounter]['permalink'] = "";
 		}
-
-		if ( $record->getField("245") ) {
-
+		/*Tittel
+		https://www.loc.gov/marc/bibliographic/concise/bd245.html*/
+		if ( $field = $record->getField("245") ) {
 			$tittel                          = $record->getField("245")->getSubfield("a");
 			$treff[$hitcounter]['tittel']    = substr($tittel, 5); // fjerne feltkoden i starten
 			$subtittel                       = $record->getField("245")->getSubfield("b");
@@ -245,6 +245,11 @@ function mikromarc_sok($url, $posisjon) {
 				$ansvar                      = $record->getField("245")->getSubfield("c");
 				$treff[$hitcounter]['ansvarsangivelse'] = substr($ansvar, 5); // fjerne feltkoden i starten
 			}
+			if($subfield=$field->getSubfield('n')) //$n - Number of part/section of a work (R)
+				$treff[$hitcounter]['subtittel'].=' '.$subfield->getData();
+			if($subfield=$field->getSubfield('p')) //$p - Name of part/section of a work (R)
+				$treff[$hitcounter]['subtittel'].=' '.$subfield->getData();
+			trim($treff[$hitcounter]['subtittel']);
 		}
 
 		if ($record->getField("574")) { // Originaltittel
@@ -307,6 +312,17 @@ function mikromarc_sok($url, $posisjon) {
 				$omfang .= " : " . $cheese;
 			}
 		$treff[$hitcounter]['omfang'] = $omfang;
+		}
+
+		/*Serie
+		https://www.loc.gov/marc/bibliographic/concise/bd762.html
+		*/
+		if ($values = $record->getFields("762")) {
+			foreach($values as $value)
+			{
+				$treff[$hitcounter]['serie'][]=$value->getSubfield('w')->getData(); //$w - Record control number (R)
+			}
+			$treff[$hitcounter]['omfang']=sprintf(__('Serie med %d objekter', 'inter-library-search-by-webloft'), count($values));
 		}
 
 		// Mikromarc: Materialtype kan ligge b&aring;de i 019 og 007

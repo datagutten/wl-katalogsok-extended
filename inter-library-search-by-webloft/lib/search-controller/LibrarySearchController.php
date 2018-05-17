@@ -199,7 +199,8 @@ class LibrarySearchController extends WL_CommonSearchController{
 
           $bestandhtml = null;
           $available  = $utlant = $limited = $unavailable = 0;
-          if ( $this->Library['system'] == 'bibliofil' or $this->Library['system'] == 'mikromarc' ){
+          //Ikke vis bestand for serier
+          if ( ($this->Library['system'] == 'bibliofil' or $this->Library['system'] == 'mikromarc') && empty($treff['serie']) ){
 
             if ( isset($treff['bestand']) && is_array($treff['bestand'])) {
               foreach ($treff['bestand'] as $enkelteks) {
