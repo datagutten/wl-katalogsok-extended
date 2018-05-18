@@ -110,6 +110,7 @@ class MBShortcode{
 					$treff['serie'][$key]=WL_Search::getSinglePost( $library, $object);
 					if($treff['serie'][$key]===false) //Post ikke funnet
 					{
+						_log(sprintf('Post %s i serie %s ble ikke funnet',$object,$treff['identifier']));
 						unset($treff['serie'][$key]);
 						continue;
 					}

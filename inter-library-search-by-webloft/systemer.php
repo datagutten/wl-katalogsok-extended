@@ -320,9 +320,12 @@ function mikromarc_sok($url, $posisjon) {
 		if ($values = $record->getFields("762")) {
 			foreach($values as $value)
 			{
-				$treff[$hitcounter]['serie'][]=$value->getSubfield('w')->getData(); //$w - Record control number (R)
+				$subfield=$value->getSubfield('w');
+				if($subfield===false)
+					continue;
+				$treff[$hitcounter]['serie'][]=$subfield->getData(); //$w - Record control number (R)
 			}
-			$treff[$hitcounter]['omfang']=sprintf(__('Serie med %d objekter', 'inter-library-search-by-webloft'), count($values));
+			$treff[$hitcounter]['omfang']=sprintf(__('Serie med %d objekter', 'inter-library-search-by-webloft'), count($treff[$hitcounter]['serie']));
 		}
 
 		// Mikromarc: Materialtype kan ligge b&aring;de i 019 og 007
